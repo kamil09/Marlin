@@ -135,7 +135,7 @@
     // This uses the LiquidCrystal_I2C library ( https://bitbucket.org/fmalpartida/new-liquidcrystal/wiki/Home )
     // Make sure it is placed in the Arduino libraries directory.
     #define LCD_I2C_TYPE_PCF8575
-    #define LCD_I2C_ADDRESS 0x27   // I2C Address of the port expander
+    #define LCD_I2C_ADDRESS 0x20   // I2C Address of the port expander
     #define ULTIPANEL
     #define NEWPANEL
   #endif

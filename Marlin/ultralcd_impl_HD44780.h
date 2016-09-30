@@ -1,3 +1,4 @@
+
 /**
  * Marlin 3D Printer Firmware
  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -105,18 +106,18 @@ extern volatile uint8_t buttons;  //an extended version of the last checked butt
 // Create LCD class instance and chipset-specific information
 #if ENABLED(LCD_I2C_TYPE_PCF8575)
   // note: these are register mapped pins on the PCF8575 controller not Arduino pins
-  #define LCD_I2C_PIN_BL  3
-  #define LCD_I2C_PIN_EN  2
-  #define LCD_I2C_PIN_RW  1
-  #define LCD_I2C_PIN_RS  0
-  #define LCD_I2C_PIN_D4  4
-  #define LCD_I2C_PIN_D5  5
-  #define LCD_I2C_PIN_D6  6
-  #define LCD_I2C_PIN_D7  7
+  
+  #define LCD_PINS_RS 6
+  #define LCD_PINS_RW 5
+  #define LCD_PINS_ENABLE 4
+  #define LCD_PINS_D4 3
+  #define LCD_PINS_D5 2
+  #define LCD_PINS_D6 1
+  #define LCD_PINS_D7 0
 
   #include <Wire.h>
-  #include <LCD.h>
   #include <LiquidCrystal_I2C.h>
+  #include <LCD.h>
   #define LCD_CLASS LiquidCrystal_I2C
   LCD_CLASS lcd(LCD_I2C_ADDRESS, LCD_I2C_PIN_EN, LCD_I2C_PIN_RW, LCD_I2C_PIN_RS, LCD_I2C_PIN_D4, LCD_I2C_PIN_D5, LCD_I2C_PIN_D6, LCD_I2C_PIN_D7);
 

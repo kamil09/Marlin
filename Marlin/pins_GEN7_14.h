@@ -69,3 +69,15 @@
 //our RS485 pins
 #define TX_ENABLE_PIN 12
 #define RX_ENABLE_PIN 13
+
+#define SDPOWER -1
+#define SDSS 24 // SCL pin of I2C header default : -1
+#define SDSSORIG         24  // Needs to set this to output to enable SPI even if other SS is used!
+#define LED_PIN -1
+#define FAN_PIN 13  //default -1
+
+//buttons
+#define BTN_EN1 21
+#define BTN_EN2 20
+#define BTN_ENC 11 //the click
+
