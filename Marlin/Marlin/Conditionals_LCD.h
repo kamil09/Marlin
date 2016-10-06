@@ -115,7 +115,7 @@
 
   #if ENABLED(RA_CONTROL_PANEL)
     #define LCD_I2C_TYPE_PCA8574
-    #define LCD_I2C_ADDRESS 0x27   // I2C Address of the port expander
+    #define LCD_I2C_ADDRESS 0x20   // I2C Address of the port expander
     #define ULTIPANEL
     #define NEWPANEL
   #endif
